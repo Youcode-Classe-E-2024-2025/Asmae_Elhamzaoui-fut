@@ -5,6 +5,7 @@
 body{
     background-color: black;
 }
+/* style du section 1 */
 video{
     height:300px;
     width: 100%;
@@ -31,6 +32,8 @@ h1{
     border-radius: 15px;
     border:1px solid white;
 }
+
+/* style du section 2 */
 .container{
     display:grid;
     grid-template-columns:repeat(3,auto);
@@ -74,4 +77,7 @@ h1{
         margin-right:20px;
     }
 }
+
+/* style du section 3 */
+
 
