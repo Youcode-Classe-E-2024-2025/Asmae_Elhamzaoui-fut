@@ -86,7 +86,7 @@ h1{
 }
 .terrain{
     width:60%;
-    height:100%;
+    height:600px;
 }
 .formation{
     width:300px;
@@ -102,7 +102,7 @@ h1{
     height: 40px;
     text-align: center;
     font-size: 16px;
-     background-color: green;
+    background-color: green;
     border: 1px solid white;
     color:white;
 }
@@ -117,4 +117,54 @@ h1{
     border: 1px solid white;
     color:white;
 }
-
+.cart img{
+   height:8rem;
+   width: 7rem;
+}
+.cart-for31{
+    position: absolute;
+    left:200px;
+    display: flex;
+    text-align: center;
+}
+.terrain-formation h4{
+    border:2px solid white;
+    border-radius:70%;
+    height:25px;
+    width: 50px;
+    margin-left: 30px;
+    padding-top: 5px;
+    margin-bottom:500px;
+}
+.cart-for4{
+    position: absolute;
+    top:650px;
+    left:150px;
+    display: flex;
+    text-align: center;
+}
+.cart-for32{
+    position: absolute;
+    top:800px;
+    left:210px;
+    display: flex;
+    text-align: center;
+}
+#gardient{
+    position: absolute;
+    top:960px;
+    left:325px;
+    display: flex;
+    text-align: center;
+}
+#gardient h4{
+    border:2px solid white;
+    border-radius:70%;
+    height:25px;
+    width: 50px;
+    margin-left: 30px;
+    padding-top: 5px;
+    margin-bottom:500px;
+    position: absolute;
+    top:130px;
+}
