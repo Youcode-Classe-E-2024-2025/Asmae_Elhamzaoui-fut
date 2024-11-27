@@ -79,7 +79,8 @@ h1{
 }
 
 /* style du section 3 */
-.terrain{
-    background-image: url("/images/terrain.png");;
+.terrain img{
+    width:60%;
+    height:100%;
 }
 
