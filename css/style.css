@@ -34,6 +34,35 @@ h1{
     border:1px solid white;
 }
 
+.container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+.cartes{
+    width:350px;
+    height: 60px;
+    display:flex;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding:5px;
+    margin:10px;
+}
+.photo{
+    width: 60px;
+    height: 60px;
+}
+.cartes i{
+   font-size: 20px;
+   margin:5px;
+}
+.flagsLogo{
+    margin:3px;
+}
 
+.infos{
+    margin:4px;
+}
 
 
