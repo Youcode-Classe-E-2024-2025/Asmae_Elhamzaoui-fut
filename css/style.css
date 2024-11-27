@@ -79,8 +79,20 @@ h1{
 }
 
 /* style du section 3 */
-.terrain img{
+.terrain-formation{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+.terrain{
     width:60%;
     height:100%;
+}
+.formation{
+    width:300px;
+    height:300px;
+    border:1px solid white;
+    margin:90px;
+    box-shadow: 10px 10px 10px  green;
 }
 
