@@ -52,4 +52,6 @@ function supprimerJoueur(playerId) {
     }
 }
 // Appeler la fonction pour afficher les joueurs après la suppression 
-afficherJoueur();
+// afficherJoueur();
+
+
