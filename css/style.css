@@ -132,13 +132,15 @@ h1{
     text-align: center;
 }
 .terrain-formation h4{
+    position: relative;
+    bottom:100px;
+    left:40px;
     border:2px solid white;
     border-radius:70%;
     height:25px;
     width: 50px;
-    margin-left: 30px;
     padding-top: 5px;
-    bottom:10px;
+ 
 }
 .cart-for4{
     position: relative;
@@ -156,21 +158,22 @@ h1{
 }
 #gardient{
     position: absolute;
-    top:960px;
+    top:850px;
     left:325px;
     display: flex;
     text-align: center;
+
 }
 #gardient h4{
     border:2px solid white;
     border-radius:70%;
     height:25px;
     width: 50px;
-    margin-left: 30px;
     padding-top: 5px;
     margin-bottom:500px;
     position: absolute;
-    top:130px;
+    top:30px;
+    left:40px;
 }
 
 
