@@ -161,53 +161,34 @@
 
   <section id="modal">
     <!-- Modal HTML -->
-    <div id="playerModal" class="modal" style="color:white">
+    <div id="playerModal" class="modal" >
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2>Ajouter un joueur</h2>
         <form id="playerForm">
-          <label for="name">Nom:</label>
-          <input type="text" id="name" required>
-
-          <label for="photo">Photo URL:</label>
-          <input type="url" id="photo" required>
-
-          <label for="position">Position:</label>
-          <input type="text" id="position"  required>
-
-          <label for="nationality">Nationalité:</label>
-          <input type="text" id="nationality"  required>
-
-          <label for="flag">Drapeau URL:</label>
-          <input type="url" id="flag"  required>
-
-          <label for="club">Club:</label>
-          <input type="text" id="club"  required>
-
-          <label for="logo">Logo du club URL:</label>
-          <input type="url" id="logo"  required>
-
-          <label for="rating">Note:</label>
-          <input type="number" id="rating" min="1" max="100" required>
-
-          <label for="pace">Vitesse:</label>
-          <input type="number" id="pace" min="0" max="100" required>
-
-          <label for="shooting">Tir:</label>
-          <input type="number" id="shooting" min="0" max="100" required>
-
-          <label for="passing">Passes:</label>
-          <input type="number" id="passing"  min="0" max="100" required>
-
-          <label for="dribbling">Dribbles:</label>
-          <input type="number" id="dribbling"  min="0" max="100" required>
-
-          <label for="defending">Défense:</label>
-          <input type="number" id="defending"  min="0" max="100" required>
-
-          <label for="physical">Physique:</label>
-          <input type="number" id="physical"  min="0" max="100" required>
-
+          <input type="text" id="name" placeholder="Nom & Prénom"  required>
+          <input type="url" id="photo" placeholder="photo" required>
+          <select  placeholder="position" id="position">
+            <option >LW</option>
+            <option >ST</option>
+            <option >RW</option>
+            <option >LM</option>
+            <option >CM</option>
+            <option >RM</option>
+            <option >CB</option>
+            <option >GK</option>
+          </select><br>
+          <input type="text" id="nationality" placeholder="nationality"   required>
+          <input type="url" id="flag" placeholder="flag"   required>
+          <input type="text" id="club" placeholder="Club"   required>
+          <input type="url" id="logo" placeholder="Logo"  required>
+          <input type="number" id="rating" min="1" max="100" placeholder="Rating"  required>
+          <input type="number" id="pace" min="0" max="100" placeholder="pace"  required>
+          <input type="number" id="shooting" min="0" max="100" placeholder="Shooting"  required>
+          <input type="number" id="passing"  min="0" max="100" placeholder="Passing"  required>
+          <input type="number" id="dribbling"  min="0" max="100" placeholder="dribbling"  required>
+          <input type="number" id="defending"  min="0" max="100" placeholder="defending"  required>
+          <input type="number" id="physical"  min="0" max="100" placeholder="Physical"  required>
           <button type="submit">Ajouter le joueur</button>
         </form>
       </div>
