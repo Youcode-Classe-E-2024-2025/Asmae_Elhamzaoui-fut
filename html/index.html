@@ -1,97 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RYAS FUT</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RYAS FUT</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header></header>
-    <section id="section1">
-        <!-- vidéo  -->
-         <video autoplay loop muted >
-            <source src="/video/ITROFUT.mp4" type="video/mp4">
-         </video>
-        <!-- Title  -->
-         <h1><b style="color:white">RYAS</b>FUT</h1>
-        <!-- options   -->
-         <div class="plan">
-           <div onclick="afficherJoueur()"><i class="fa-duotone fa-solid fa-futbol" style="color: green; --fa-secondary-color: #0f5002;"></i>  Joueur </div>
-           <div onclick="ajouterJoueur()"><i class="fa-solid fa-plus" style="color: green;"></i> Ajouter joueur </div>
-           <div onclick="afficherFormation()"><i class="fa-regular fa-calendar-days" style="color: green;"></i> Formation </div>
-         </div>
-    </section>
+  <header></header>
+  <section id="section1">
+    <!-- vidéo  -->
+    <video autoplay loop muted>
+      <source src="/video/ITROFUT.mp4" type="video/mp4">
+    </video>
+    <!-- Title  -->
+    <h1><b style="color:white">RYAS</b>FUT</h1>
+    <!-- options   -->
+    <div class="plan">
+      <div onclick="afficherJoueur()"><i class="fa-duotone fa-solid fa-futbol"
+          style="color: green; --fa-secondary-color: #0f5002;"></i> Joueur </div>
+      <div onclick="ajouterJoueur()"><i class="fa-solid fa-plus" style="color: green;"></i> Ajouter joueur </div>
+      <div onclick="afficherFormation()"><i class="fa-regular fa-calendar-days" style="color: green;"></i> Formation
+      </div>
+    </div>
+  </section>
 
-    <section id="section2">
-            <div id="container">
-               <!-- affichage de tout les joueurs -->
-            </div>
-    </section>
+  <section id="section2">
+    <div id="container">
+      <!-- affichage de tout les joueurs -->
+    </div>
+  </section>
 
-    <section id="section3">
-     <div class="terrain-formation">
-              <img class="terrain" src="/images/terrain.png">
-              <div class="cart-for31" style="color:white">
-                <div class="cart">
-                    <img src="/images/cartfut.png"><p style="position: relative; bottom:112px;right:26px;font-size:17px;">90</p><p style="position: relative; bottom:112px;right:26px;font-size:11px;">CF</p><img style="position: relative; bottom:160px;left:10px;font-size:17px;height:73px;width:60px;" src="https://cdn.sofifa.net/players/239/085/25_120.png"><p style="position: relative; bottom:185px;right:26px;font-size:13px;">Messi</p>
-                    <p style="position: relative; bottom:174px;right:37px;font-size:6px;">PAC</p><br><p style="position: relative; bottom:193px;right:37px;font-size:9px;">80</p>
-                    <p style="position: relative; bottom:209px;right:23px;font-size:6px;">PAC<br><p style="position: relative; bottom:210px;right:23px;font-size:9px;">80</p></p>
-                    <p style="position: relative; bottom:227px;right:9px;font-size:6px;">PAC<br><p style="position: relative; bottom:227px;right:9px;font-size:9px;">80</p></p>
-                    <p style="position: relative; bottom:245px;left:35px;font-size:6px;">COK<br><p style="position: relative; bottom:245px;left:35px;font-size:9px;">80</p></p>
-                    <p style="position: relative; bottom:262px;left:21px;font-size:6px;">PAC<br><p style="position: relative; bottom:262px;left:21px;font-size:9px;">80</p></p>
-                    <p style="position: relative; bottom:279px;left:8px;font-size:6px;">PAC<br><p style="position: relative; bottom:280px;left:8px;font-size:9px;">80</p></p>
-                    <img style="position: relative; bottom:285px;right:5px;font-size:6px;height:7px;width:10px;" src="https://cdn.sofifa.net/flags/fr.png">
-                    <img style="position: relative; bottom:283px;left:3px;font-size:6px;height:10px;width:10px;" src="https://cdn.sofifa.net/meta/team/14/120.png">
-                  
-                </div>
-                <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png"><h4>ST</h4></div>
-                <div class="cart"><img src="/images/cartfut.png"><h4>ST</h4></div>
-                <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png"><h4>ST</h4></div>
-                <div class="cart"><img src="/images/cartfut.png"><h4>RW</h4></div>
-                <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png"><h4>ST</h4></div>
+  <section id="section3">
+    <div class="terrain-formation">
+      <img class="terrain" src="/images/terrain.png">
+      <div class="cart-for31" style="color:white">
+        <div class="cart">
+          <img src="/images/cartfut.png">
+          <p style="position: relative; bottom:112px;right:26px;font-size:17px;">90</p>
+          <p style="position: relative; bottom:112px;right:26px;font-size:11px;">CF</p><img
+            style="position: relative; bottom:160px;left:10px;font-size:17px;height:73px;width:60px;"
+            src="https://cdn.sofifa.net/players/239/085/25_120.png">
+          <p style="position: relative; bottom:185px;right:26px;font-size:13px;">Messi</p>
+          <p style="position: relative; bottom:174px;right:37px;font-size:6px;">PAC</p><br>
+          <p style="position: relative; bottom:193px;right:37px;font-size:9px;">80</p>
+          <p style="position: relative; bottom:209px;right:23px;font-size:6px;">PAC<br>
+          <p style="position: relative; bottom:210px;right:23px;font-size:9px;">80</p>
+          </p>
+          <p style="position: relative; bottom:227px;right:9px;font-size:6px;">PAC<br>
+          <p style="position: relative; bottom:227px;right:9px;font-size:9px;">80</p>
+          </p>
+          <p style="position: relative; bottom:245px;left:35px;font-size:6px;">COK<br>
+          <p style="position: relative; bottom:245px;left:35px;font-size:9px;">80</p>
+          </p>
+          <p style="position: relative; bottom:262px;left:21px;font-size:6px;">PAC<br>
+          <p style="position: relative; bottom:262px;left:21px;font-size:9px;">80</p>
+          </p>
+          <p style="position: relative; bottom:279px;left:8px;font-size:6px;">PAC<br>
+          <p style="position: relative; bottom:280px;left:8px;font-size:9px;">80</p>
+          </p>
+          <img style="position: relative; bottom:285px;right:5px;font-size:6px;height:7px;width:10px;"
+            src="https://cdn.sofifa.net/flags/fr.png">
+          <img style="position: relative; bottom:283px;left:3px;font-size:6px;height:10px;width:10px;"
+            src="https://cdn.sofifa.net/meta/team/14/120.png">
 
-              </div>
-              
-              <div class="cart-for4" style="color:white">
-                <div class="cart"><img src="/images/cartfut.png"><h4>LM</h4></div>
-                <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png"><h4>ST</h4></div>
-                <div class="cart"><img src="/images/cartfut.png"><h4>CM</h4></div>
-                <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png"><h4>ST</h4></div>
-                <div class="cart"><img src="/images/cartfut.png"><h4>CM</h4></div>
-                <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png"><h4>ST</h4></div>
-                <div class="cart"><img src="/images/cartfut.png"><h4>RM</h4></div>
-                <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png"><h4>ST</h4></div>
-              </div>
+        </div>
+        <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png">
+          <h4>ST</h4>
+        </div>
+        <div class="cart"><img src="/images/cartfut.png">
+          <h4>ST</h4>
+        </div>
+        <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png">
+          <h4>ST</h4>
+        </div>
+        <div class="cart"><img src="/images/cartfut.png">
+          <h4>RW</h4>
+        </div>
+        <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png">
+          <h4>ST</h4>
+        </div>
 
-              <div class="cart-for32" style="color:white">
-                <div class="cart"><img src="/images/cartfut.png"><h4>CB</h4></div>
-                <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png"><h4>ST</h4></div>
-                <div class="cart"><img src="/images/cartfut.png"><h4>CB</h4></div>
-                <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png"><h4>ST</h4></div>
-                <div class="cart"><img src="/images/cartfut.png"><h4>CB</h4></div>
-                <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png"><h4>ST</h4></div>
-              </div>
-              <div class="cart-gardien">
-                <div class="cart" id="gardient" style="color:white"><img src="/images/cartfut.png"><h4>GK</h></div>
-                <div class="T-shirtFut" ><img src="/images/T-shirtFut.png"><h4>ST</h4></div> 
-              </div>
-         <div class="formation">
-          <form>
-            <select name="choix">
-                <option value="0">Formation</option>
-                <option value="1">4-4-2</option>
-                <option value="2">4-3-3</option>
-                <option value="3">3-4-3</option>
-            </select><br>
-            <button>Changer le mode</button><br>
-            <button>Jouer</button>
-          </form>
-         </div>
-     </div>
-    </section>
-    <footer></footer>
-    <script src="/js/script.js"></script>
+      </div>
+
+      <div class="cart-for4" style="color:white">
+        <div class="cart"><img src="/images/cartfut.png">
+          <h4>LM</h4>
+        </div>
+        <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png">
+          <h4>ST</h4>
+        </div>
+        <div class="cart"><img src="/images/cartfut.png">
+          <h4>CM</h4>
+        </div>
+        <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png">
+          <h4>ST</h4>
+        </div>
+        <div class="cart"><img src="/images/cartfut.png">
+          <h4>CM</h4>
+        </div>
+        <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png">
+          <h4>ST</h4>
+        </div>
+        <div class="cart"><img src="/images/cartfut.png">
+          <h4>RM</h4>
+        </div>
+        <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png">
+          <h4>ST</h4>
+        </div>
+      </div>
+
+      <div class="cart-for32" style="color:white">
+        <div class="cart"><img src="/images/cartfut.png">
+          <h4>CB</h4>
+        </div>
+        <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png">
+          <h4>ST</h4>
+        </div>
+        <div class="cart"><img src="/images/cartfut.png">
+          <h4>CB</h4>
+        </div>
+        <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png">
+          <h4>ST</h4>
+        </div>
+        <div class="cart"><img src="/images/cartfut.png">
+          <h4>CB</h4>
+        </div>
+        <div class="T-shirtFut" style="display:none;"><img src="/images/T-shirtFut.png">
+          <h4>ST</h4>
+        </div>
+      </div>
+      <div class="cart-gardien">
+        <div class="cart" id="gardient" style="color:white"><img src="/images/cartfut.png">
+          <h4>GK</h>
+        </div>
+        <div class="T-shirtFut"><img src="/images/T-shirtFut.png">
+          <h4>ST</h4>
+        </div>
+      </div>
+      <div class="formation">
+        <form>
+          <select name="choix">
+            <option value="0">Formation</option>
+            <option value="1">4-4-2</option>
+            <option value="2">4-3-3</option>
+            <option value="3">3-4-3</option>
+          </select><br>
+          <button>Changer le mode</button><br>
+          <button>Jouer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="modal">
+    <!-- Modal HTML -->
+    <div id="playerModal" class="modal" style="color:white">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Ajouter un joueur</h2>
+        <form id="playerForm">
+          <label for="name">Nom:</label>
+          <input type="text" id="name" required>
+
+          <label for="photo">Photo URL:</label>
+          <input type="url" id="photo" required>
+
+          <label for="position">Position:</label>
+          <input type="text" id="position"  required>
+
+          <label for="nationality">Nationalité:</label>
+          <input type="text" id="nationality"  required>
+
+          <label for="flag">Drapeau URL:</label>
+          <input type="url" id="flag"  required>
+
+          <label for="club">Club:</label>
+          <input type="text" id="club"  required>
+
+          <label for="logo">Logo du club URL:</label>
+          <input type="url" id="logo"  required>
+
+          <label for="rating">Note:</label>
+          <input type="number" id="rating" min="1" max="100" required>
+
+          <label for="pace">Vitesse:</label>
+          <input type="number" id="pace" min="0" max="100" required>
+
+          <label for="shooting">Tir:</label>
+          <input type="number" id="shooting" min="0" max="100" required>
+
+          <label for="passing">Passes:</label>
+          <input type="number" id="passing"  min="0" max="100" required>
+
+          <label for="dribbling">Dribbles:</label>
+          <input type="number" id="dribbling"  min="0" max="100" required>
+
+          <label for="defending">Défense:</label>
+          <input type="number" id="defending"  min="0" max="100" required>
+
+          <label for="physical">Physique:</label>
+          <input type="number" id="physical"  min="0" max="100" required>
+
+          <button type="submit">Ajouter le joueur</button>
+        </form>
+      </div>
+    </div>
+
+  </section>
+  <footer></footer>
+  <script src="/js/script.js"></script>
 </body>
+
 </html>
