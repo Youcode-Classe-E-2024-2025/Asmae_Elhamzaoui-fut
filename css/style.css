@@ -85,6 +85,7 @@ h1{
     gap:10px;
 }
 .terrain{
+    margin-top:20px ;
     width:60%;
     height:600px;
     position:absolute;

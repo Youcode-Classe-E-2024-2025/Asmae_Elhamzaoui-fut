@@ -26,7 +26,7 @@ fetch('/players.json')
                       <img src="${player.logo}"style="width: 30px;">
                   </div>
                   <div >
-                      <i class="fa-solid fa-trash" style="color: #1d721e;"></i><br>
+                      <i onclick="supprimerJoueur(${player.id})" data-id="${player.id}" class="fa-solid fa-trash" style="color: #1d721e;"></i><br>
                       <i class="fa-solid fa-pen-to-square" style="color: #1d721e;"></i>
                   </div>
             
@@ -39,3 +39,17 @@ fetch('/players.json')
 })
 .catch(error => console.error('Erreur lors de la récupération des données:', error));
 }
+
+//supprimer un joueur 
+function supprimerJoueur(playerId) {
+    console.log('hi');
+    // Trouver l'élément correspondant au joueur avec l'ID donné
+    const playerElement = document.querySelector(`.fa-trash[data-id="${playerId}"]`).closest('.cartes');
+    
+    if (playerElement) {
+        // Suppression le joueur 
+        playerElement.remove();
+    }
+}
+// Appeler la fonction pour afficher les joueurs après la suppression 
+afficherJoueur();
