@@ -1,6 +1,7 @@
 
-function afficherJoueur(){
 
+// fonction pour l'affichage des joueurs
+function afficherJoueur(){
 fetch('/players.json')
 .then(response => response.json())
 .then(data => {
@@ -40,6 +41,8 @@ fetch('/players.json')
 .catch(error => console.error('Erreur lors de la récupération des données:', error));
 }
 
+
+
 //supprimer un joueur 
 function supprimerJoueur(playerId) {
     console.log('hi');
@@ -51,10 +54,12 @@ function supprimerJoueur(playerId) {
         playerElement.remove();
     }
 }
+
+
 // fonction d'ajout d'un joueur
 // Tableau pour stocker les joueurs
-let players = [];
 
+let players = [];
 // Récupérer l'élément modal et le formulaire
 const modal = document.getElementById("playerModal");
 const form = document.getElementById("playerForm");
@@ -132,8 +137,6 @@ form.onsubmit = function(event) {
                           </div>
                     
           `;
-          
-         
           console.log(playerInfo);
           // Ajouter le joueur à la div principale
           playersContainer.appendChild( playerInfo);
@@ -142,9 +145,67 @@ form.onsubmit = function(event) {
         });
     }
 }
-
-// Ouvrir le modal
+// Ouvrture du modal
 document.getElementById("openModalBtn").onclick = openModal;
+ // modifier les informations d'un joueur
+  
+ function modifierJoueur(playerId) {
+        
+    openModal();
+
+    
+    const playerToEdit = players.find(player => player.id === playerId);
+
+    if (playerToEdit) {
+       
+        document.getElementById("name").value = playerToEdit.name;
+        document.getElementById("photo").value = playerToEdit.photo;
+        document.getElementById("position").value = playerToEdit.position;
+        document.getElementById("nationality").value = playerToEdit.nationality;
+        document.getElementById("flag").value = playerToEdit.flag;
+        document.getElementById("club").value = playerToEdit.club;
+        document.getElementById("logo").value = playerToEdit.logo;
+        document.getElementById("rating").value = playerToEdit.rating;
+        document.getElementById("pace").value = playerToEdit.pace;
+        document.getElementById("shooting").value = playerToEdit.shooting;
+        document.getElementById("passing").value = playerToEdit.passing;
+        document.getElementById("dribbling").value = playerToEdit.dribbling;
+        document.getElementById("defending").value = playerToEdit.defending;
+        document.getElementById("physical").value = playerToEdit.physical;
+
+
+
+        form.onsubmit = function (event) {
+            event.preventDefault();
+
+            playerToEdit.name = document.getElementById("name").value;
+            playerToEdit.photo = document.getElementById("photo").value;
+            playerToEdit.position = document.getElementById("position").value;
+            playerToEdit.nationality = document.getElementById("nationality").value;
+            playerToEdit.flag = document.getElementById("flag").value;
+            playerToEdit.club = document.getElementById("club").value;
+            playerToEdit.logo = document.getElementById("logo").value;
+            playerToEdit.rating = parseInt(document.getElementById("rating").value);
+            playerToEdit.pace = parseInt(document.getElementById("pace").value);
+            playerToEdit.shooting = parseInt(document.getElementById("shooting").value);
+            playerToEdit.passing = parseInt(document.getElementById("passing").value);
+            playerToEdit.dribbling = parseInt(document.getElementById("dribbling").value);
+            playerToEdit.defending = parseInt(document.getElementById("defending").value);
+            playerToEdit.physical = parseInt(document.getElementById("physical").value);
+
+            
+            updatePlayerDisplay(playerToEdit);
+
+              modal.style.display = "none";
+        };
+    }
+}
+
+
+
+
+
+
 
 
 
