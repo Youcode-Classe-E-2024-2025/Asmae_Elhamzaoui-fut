@@ -238,7 +238,7 @@ function remplirCarte(player) {
   }
 
     selectedCarte.innerHTML = `
-          <img src="/images/cartfut.png">
+          <img src="images/cartfut.png">
           <p style="position: relative; bottom:112px;right:26px;font-size:17px;">${player.position}</p>
           <p style="position: relative; bottom:112px;right:26px;font-size:11px;">${player.rating}</p>
           <img style="position: relative; bottom:160px;left:10px;font-size:17px;height:73px;width:60px;"  src="${player.photo}">
