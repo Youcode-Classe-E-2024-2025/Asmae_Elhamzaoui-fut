@@ -20,7 +20,7 @@ fetch('/players.json')
                   <img class="photo" src="${player.photo}">
                   <div class="infos">
                       <h3 style="color:antiquewhite">${player.name}</h3>
-                      <h3 style="color:antiquewhite">${player.pace}</h3>
+                       <h3 style="color:antiquewhite">${player.position}</h3>
                   </div>
                   <div class="flagsLogo">
                       <img src="${player.flag}" style="width: 30px;"><br>
@@ -158,6 +158,57 @@ document.getElementById("openModalBtn").onclick = openModal;
 
  // modifier les informations d'un joueur
   
+ function modifierJoueur(playerId) {
+        
+    openModal();
+
+    
+    const playerToEdit = players.find(player => player.id === playerId);
+
+    if (playerToEdit) {
+       
+        document.getElementById("name").value = playerToEdit.name;
+        document.getElementById("photo").value = playerToEdit.photo;
+        document.getElementById("position").value = playerToEdit.position;
+        document.getElementById("nationality").value = playerToEdit.nationality;
+        document.getElementById("flag").value = playerToEdit.flag;
+        document.getElementById("club").value = playerToEdit.club;
+        document.getElementById("logo").value = playerToEdit.logo;
+        document.getElementById("rating").value = playerToEdit.rating;
+        document.getElementById("pace").value = playerToEdit.pace;
+        document.getElementById("shooting").value = playerToEdit.shooting;
+        document.getElementById("passing").value = playerToEdit.passing;
+        document.getElementById("dribbling").value = playerToEdit.dribbling;
+        document.getElementById("defending").value = playerToEdit.defending;
+        document.getElementById("physical").value = playerToEdit.physical;
+
+
+
+        form.onsubmit = function (event) {
+            event.preventDefault();
+
+            playerToEdit.name = document.getElementById("name").value;
+            playerToEdit.photo = document.getElementById("photo").value;
+            playerToEdit.position = document.getElementById("position").value;
+            playerToEdit.nationality = document.getElementById("nationality").value;
+            playerToEdit.flag = document.getElementById("flag").value;
+            playerToEdit.club = document.getElementById("club").value;
+            playerToEdit.logo = document.getElementById("logo").value;
+            playerToEdit.rating = parseInt(document.getElementById("rating").value);
+            playerToEdit.pace = parseInt(document.getElementById("pace").value);
+            playerToEdit.shooting = parseInt(document.getElementById("shooting").value);
+            playerToEdit.passing = parseInt(document.getElementById("passing").value);
+            playerToEdit.dribbling = parseInt(document.getElementById("dribbling").value);
+            playerToEdit.defending = parseInt(document.getElementById("defending").value);
+            playerToEdit.physical = parseInt(document.getElementById("physical").value);
+
+            
+           
+
+              modal.style.display = "none";
+        };
+    }
+}
 
 
 
