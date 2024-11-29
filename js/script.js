@@ -2,7 +2,7 @@
 
 // fonction pour l'affichage des joueurs
 function afficherJoueur(){
-fetch('/players.json')
+fetch('players.json')
 .then(response => response.json())
 .then(data => {
     
@@ -45,7 +45,6 @@ playerInfo.addEventListener("click",(e)=>{
 });
 
 })
-.catch(error => console.error('Erreur lors de la récupération des données:', error));
 }
 
 
