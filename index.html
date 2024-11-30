@@ -142,27 +142,29 @@
         <form id="playerForm">
           <input type="text" id="name" placeholder="Nom & Prénom"  required>
           <input type="url" id="photo" placeholder="photo" required>
-          <select  placeholder="position" id="position">
-            <option >LW</option>
-            <option >ST</option>
-            <option >RW</option>
-            <option >LM</option>
-            <option >CM</option>
-            <option >RM</option>
-            <option >CB</option>
-            <option >GK</option>
-          </select><br>
           <input type="text" id="nationality" placeholder="nationality"   required>
           <input type="url" id="flag" placeholder="flag"   required>
           <input type="text" id="club" placeholder="Club"   required>
           <input type="url" id="logo" placeholder="Logo"  required>
-          <input type="number" id="rating" min="1" max="100" placeholder="Rating"  required>
-          <input type="number" id="pace" min="0" max="100" placeholder="pace"  required>
-          <input type="number" id="shooting" min="0" max="100" placeholder="Shooting"  required>
-          <input type="number" id="passing"  min="0" max="100" placeholder="Passing"  required>
-          <input type="number" id="dribbling"  min="0" max="100" placeholder="dribbling"  required>
-          <input type="number" id="defending"  min="0" max="100" placeholder="defending"  required>
-          <input type="number" id="physical"  min="0" max="100" placeholder="Physical"  required>
+          <div>
+            <select  placeholder="position" id="position">
+              <option >LW</option>
+              <option >ST</option>
+              <option >RW</option>
+              <option >LM</option>
+              <option >CM</option>
+              <option >RM</option>
+              <option >CB</option>
+              <option >GK</option>
+            </select><br>
+            <input type="number" id="rating" min="1" max="100" placeholder="Rating"  required>
+            <input type="number" id="pace" min="0" max="100" placeholder="pace"  required>
+            <input type="number" id="shooting" min="0" max="100" placeholder="Shooting"  required>
+            <input type="number" id="passing"  min="0" max="100" placeholder="Passing"  required>
+            <input type="number" id="dribbling"  min="0" max="100" placeholder="dribbling"  required>
+            <input type="number" id="defending"  min="0" max="100" placeholder="defending"  required>
+            <input type="number" id="physical"  min="0" max="100" placeholder="Physical"  required>
+          </div>
           <button type="submit">Ajouter le joueur</button>
         </form>
       </div>
