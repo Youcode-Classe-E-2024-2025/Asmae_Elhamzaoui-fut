@@ -142,11 +142,13 @@
         <form id="playerForm">
           <input type="text" id="name" placeholder="Nom & Prénom"  required>
           <input type="url" id="photo" placeholder="photo" required>
+        
           <input type="text" id="nationality" placeholder="nationality"   required>
           <input type="url" id="flag" placeholder="flag"   required>
           <input type="text" id="club" placeholder="Club"   required>
           <input type="url" id="logo" placeholder="Logo"  required>
-          <div>
+          <div class="modalInputs">
+            <input type="number" id="rating" min="1" max="100" placeholder="Rating"  required>
             <select  placeholder="position" id="position">
               <option >LW</option>
               <option >ST</option>
@@ -156,8 +158,7 @@
               <option >RM</option>
               <option >CB</option>
               <option >GK</option>
-            </select><br>
-            <input type="number" id="rating" min="1" max="100" placeholder="Rating"  required>
+            </select>
             <input type="number" id="pace" min="0" max="100" placeholder="pace"  required>
             <input type="number" id="shooting" min="0" max="100" placeholder="Shooting"  required>
             <input type="number" id="passing"  min="0" max="100" placeholder="Passing"  required>
