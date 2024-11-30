@@ -236,38 +236,66 @@ function remplirCarte(player) {
     alert(` on peut pas mettre  ${player.name} dans cette position : ${cartePosition}, position du joueur : ${player.position}`);
     return;  
   }
-
+if(player.position!=="GK"){
     selectedCarte.innerHTML = `
-          <img src="images/cartfut.png">
-          <p style="position: relative; bottom:112px;right:26px;font-size:17px;">${player.position}</p>
-          <p style="position: relative; bottom:112px;right:26px;font-size:11px;">${player.rating}</p>
-          <img style="position: relative; bottom:160px;left:10px;font-size:17px;height:73px;width:60px;"  src="${player.photo}">
-          <p style="position: relative; bottom:185px;right:26px;font-size:7px;">${player.name}</p>
-          <p style="position: relative; bottom:174px;right:37px;font-size:6px;">PAC</p><br>
-          <p style="position: relative; bottom:193px;right:37px;font-size:9px;">${player.pace}</p>
-          <p style="position: relative; bottom:209px;right:23px;font-size:6px;">SHO<br>
-          <p style="position: relative; bottom:210px;right:23px;font-size:9px;">${player.shooting}</p>
-          </p>
-          <p style="position: relative; bottom:227px;right:9px;font-size:6px;">PAS<br>
-          <p style="position: relative; bottom:227px;right:9px;font-size:9px;">${player.passing}</p>
-          </p>
-          <p style="position: relative; bottom:245px;left:35px;font-size:6px;">DRI<br>
-          <p style="position: relative; bottom:245px;left:35px;font-size:9px;">${player.dribbling}</p>
-          </p>
-          <p style="position: relative; bottom:262px;left:21px;font-size:6px;">DEF<br>
-          <p style="position: relative; bottom:262px;left:21px;font-size:9px;">${player.defending}</p>
-          </p>
-          <p style="position: relative; bottom:279px;left:8px;font-size:6px;">PHY<br>
-          <p style="position: relative; bottom:280px;left:8px;font-size:9px;">${player.physical}</p>
-          </p>
-          <img style="position: relative; bottom:285px;right:5px;font-size:6px;height:7px;width:10px;"
-            src="${player.flag}">
-          <img style="position: relative; bottom:283px;left:3px;font-size:6px;height:10px;width:10px;"
-            src="${player.logo}">
-
-
-      
+    <img src="images/cartfut.png">
+    <p style="position: relative; bottom:112px;right:26px;font-size:17px;">${player.position}</p>
+    <p style="position: relative; bottom:112px;right:26px;font-size:11px;">${player.rating}</p>
+    <img style="position: relative; bottom:160px;left:10px;font-size:17px;height:73px;width:60px;"  src="${player.photo}">
+    <p style="position: relative; bottom:185px;right:26px;font-size:7px;">${player.name}</p>
+    <p style="position: relative; bottom:174px;right:37px;font-size:6px;">PAC</p><br>
+    <p style="position: relative; bottom:193px;right:37px;font-size:9px;">${player.pace}</p>
+    <p style="position: relative; bottom:209px;right:23px;font-size:6px;">SHO<br>
+    <p style="position: relative; bottom:210px;right:23px;font-size:9px;">${player.shooting}</p>
+    </p>
+    <p style="position: relative; bottom:227px;right:9px;font-size:6px;">PAS<br>
+    <p style="position: relative; bottom:227px;right:9px;font-size:9px;">${player.passing}</p>
+    </p>
+    <p style="position: relative; bottom:245px;left:35px;font-size:6px;">DRI<br>
+    <p style="position: relative; bottom:245px;left:35px;font-size:9px;">${player.dribbling}</p>
+    </p>
+    <p style="position: relative; bottom:262px;left:21px;font-size:6px;">DEF<br>
+    <p style="position: relative; bottom:262px;left:21px;font-size:9px;">${player.defending}</p>
+    </p>
+    <p style="position: relative; bottom:279px;left:8px;font-size:6px;">PHY<br>
+    <p style="position: relative; bottom:280px;left:8px;font-size:9px;">${player.physical}</p>
+    </p>
+    <img style="position: relative; bottom:285px;right:5px;font-size:6px;height:7px;width:10px;"
+      src="${player.flag}">
+    <img style="position: relative; bottom:283px;left:3px;font-size:6px;height:10px;width:10px;"
+      src="${player.logo}">
+`;
+}
+    else{
+        selectedCarte.innerHTML = `
+        <img src="images/cartfut.png">
+        <p style="position: relative; bottom:112px;right:26px;font-size:17px;">${player.position}</p>
+        <p style="position: relative; bottom:112px;right:26px;font-size:11px;">${player.rating}</p>
+        <img style="position: relative; bottom:160px;left:10px;font-size:17px;height:73px;width:60px;"  src="${player.photo}">
+        <p style="position: relative; bottom:185px;right:26px;font-size:7px;">${player.name}</p>
+        <p style="position: relative; bottom:174px;right:37px;font-size:6px;">PAC</p><br>
+        <p style="position: relative; bottom:193px;right:37px;font-size:9px;">${player.diving}</p>
+        <p style="position: relative; bottom:209px;right:23px;font-size:6px;">SHO<br>
+        <p style="position: relative; bottom:210px;right:23px;font-size:9px;">${player.handling}</p>
+        </p>
+        <p style="position: relative; bottom:227px;right:9px;font-size:6px;">PAS<br>
+        <p style="position: relative; bottom:227px;right:9px;font-size:9px;">${player.kicking}</p>
+        </p>
+        <p style="position: relative; bottom:245px;left:35px;font-size:6px;">DRI<br>
+        <p style="position: relative; bottom:245px;left:35px;font-size:9px;">${player.reflexes}</p>
+        </p>
+        <p style="position: relative; bottom:262px;left:21px;font-size:6px;">DEF<br>
+        <p style="position: relative; bottom:262px;left:21px;font-size:9px;">${player.speed}</p>
+        </p>
+        <p style="position: relative; bottom:279px;left:8px;font-size:6px;">PHY<br>
+        <p style="position: relative; bottom:280px;left:8px;font-size:9px;">${player.positioning}</p>
+        </p>
+        <img style="position: relative; bottom:285px;right:5px;font-size:6px;height:7px;width:10px;"
+          src="${player.flag}">
+        <img style="position: relative; bottom:283px;left:3px;font-size:6px;height:10px;width:10px;"
+          src="${player.logo}">
     `;
+    }
   
   }
 
