@@ -10,7 +10,7 @@ fetch('players.json')
   playersContainer.innerText=""
     
     // Boucle pour parcourir tous les joueurs et les afficher
-    data.players.forEach((player,index) => {
+    data.players.forEach((player) => {
        
     // Créer un élément div pour chaque joueur
      const playerInfo = document.createElement('div');
@@ -53,6 +53,7 @@ playerInfo.addEventListener("click",(e)=>{
 function supprimerJoueur(playerId) {
     console.log('hi');
     // Trouver l'élément correspondant au joueur avec l'ID donné
+    
     const playerElement = document.querySelector(`.fa-trash[data-id="${playerId}"]`).closest('.cartes');
     
     if (playerElement) {
@@ -211,8 +212,14 @@ document.getElementById("openModalBtn").onclick = openModal;
 
 
 
-const cartesA = document.querySelectorAll(".cart");
+
+
+
 // pour afficher la liste des joueurs
+
+
+const cartesA = document.querySelectorAll(".cart");
+
 let selectedCarte = null;
 
 cartesA.forEach((carte) => {
