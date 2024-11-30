@@ -42,6 +42,8 @@ playerInfo.addEventListener("click",(e)=>{
     remplirCarte(player);
     })
 
+    
+
 });
 
 })
@@ -243,12 +245,25 @@ const cartesA = document.querySelectorAll(".cart");
 
 let selectedCarte = null;
 
+// parcourir tout les cartes vides;
 cartesA.forEach((carte) => {
   carte.addEventListener("click", () => {
     selectedCarte = carte; //stockage de la carte
     afficherJoueur();
   });
 });
+
+// parcourir tout les t-shirt , et quand on survol sur le t-shirt les informations du joueur vont afficher 
+
+const T_shirts = document.querySelectorAll(".T-shirtFut");
+
+T_shirts.forEach((T_shirt) => {
+    T_shirt.addEventListener("click", () => {
+      selectedCarte = T_shirt; //stockage de la carte
+      afficherJoueur();
+    });
+  });
+
 
 
 
