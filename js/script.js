@@ -296,7 +296,11 @@ if(player.position!=="GK"){
           src="${player.logo}">
     `;
     }
-  
+     
+
+    selectedCarte.onclick=function(){
+        remplirCarte(player);
+    }
   }
 
 
