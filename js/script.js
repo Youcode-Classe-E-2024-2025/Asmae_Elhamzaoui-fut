@@ -48,6 +48,27 @@ playerInfo.addEventListener("click",(e)=>{
 }
 
 
+//fontion pour l'afichage de la formation:
+
+// function afficherFormation(){
+//     const section2 = document.getElementById('container');
+//     console.log("hi");
+//     if(!afficherJoueur()){
+//         section2.style.display="none";
+//     }
+//     else{
+
+//     }
+// }
+
+
+
+
+
+
+
+
+
 
 //supprimer un joueur 
 function supprimerJoueur(playerId) {
@@ -225,7 +246,6 @@ let selectedCarte = null;
 cartesA.forEach((carte) => {
   carte.addEventListener("click", () => {
     selectedCarte = carte; //stockage de la carte
-
     afficherJoueur();
   });
 });
