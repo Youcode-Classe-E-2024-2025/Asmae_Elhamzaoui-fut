@@ -330,4 +330,167 @@ h1{
     gap:13px;
 }
 
+@media(max-width:904px) {
+   
+    .cart-for31{
+        left:80px;
+    }
+    .cart-for32{
+        right:710px;
+    }
+    .cart-for4{
+        right:309px;
+    }
+    .cart-gardien{
+        right:935px;
+    }
+  
+  
+}
 
+@media(max-width:813px) {
+    .terrain{
+    width:75%;
+    right: 105px;
+}
+
+    .cart-for31{
+        left:80px;
+    }
+    .cart-for32{
+        right:710px;
+    }
+    .cart-for4{
+        right:315px;
+    }
+    .cart-gardien{
+        right:945px;
+    }
+}
+
+@media(max-width:790px){
+    .cart-for31{
+        left:60px;
+    }
+    .cart-for32{
+        right:730px;
+    }
+    .cart-for4{
+        right:340px;
+    }
+    .cart-gardien{
+        right:960px;
+    }
+}
+
+@media(max-width:747px){
+    .cart-for31{
+        left:40px;
+    }
+    .cart-gardien{
+        right:990px;
+    }
+    .cart-for4{
+        right:370px;
+    }
+    .cart-for32{
+        right:750px;
+    }
+}
+
+@media(max-width:710px){
+    .cart-for31{
+        left:10px;
+    }
+    .cart-gardien{
+        right:1015px;
+    }
+    .cart-for4{
+        right:390px;
+    }
+    .cart-for32{
+        right:790px;
+    }
+}
+@media(max-width:671px){
+    .cart-for31{
+        margin-left:-20px;
+    }
+}
+@media(max-width:645px){
+    .cart-for31{
+        margin-left:-30px;
+    }
+}
+@media(max-width:630px){
+    .cart-for31{
+        margin-left:-50px;
+    }
+}
+@media(max-width:610px){
+    .cart-for31{
+        margin-left:-50px;
+    }
+    .terrain{
+        width:100%;
+        right:5px;
+    }
+}
+
+@media(max-width:523px){
+    .cart-for31{
+        margin-left:-80px;
+    }
+}
+
+@media(max-width:596px){
+    .cart-for31{
+        margin-left:-50px;
+    }
+}
+
+@media(max-width:530px){
+    .cart-for31{
+        margin-left:-80px;
+    }
+}
+
+
+@media(max-width:490px){
+    .cart-for31{
+        margin-left:-100px;
+    }
+}
+@media(max-width:450px){
+    .cart-for31{
+        margin-left:-110px;
+    }
+
+    .terrain{
+        width:450px; 
+       }
+       .T-shirtFut img{
+        width: 100px;
+    }
+    .T-shirtFut h4{
+        width: 25px;
+    }
+    .cart-gardien{
+        right:920px;
+    }
+    .cart-for4{
+        right:350px;
+    }
+    .cart-for32{
+        right:710px;
+    }
+}
+
+@media(max-width:435px){
+    .cart-for31{
+        margin-left:-115px;
+    }
+    .terrain{
+        width:410px; 
+       }
+}
