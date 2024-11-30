@@ -78,6 +78,9 @@ h1{
     }
 }
 
+.T-shirtFut {
+    display:none;
+}
 /* style du section 3 */
 .terrain-formation{
     display: flex;
@@ -224,19 +227,35 @@ h1{
        margin:4rem 10rem;
     }
     .cart-for31{
-        left:130px;
+        left:120px;
+        margin-top:40px;
+    }
+    .cart-for32{
+        right:670px;
+        margin-top: 10px;
     }
     .cart-for4{
-        right:280px;
+        right:270px;
+        margin-top: 40px;
     }
     .cart-gardien{
-        right:915px;
+        right:900px;
     }
     .cart{
         display:none;
     }
-    .T-shirtFut{
-        display:flex;
+    .T-shirtFut {
+        display:block;
+    }
+    .T-shirtFut img{
+        width: 110px;
+    }
+    .T-shirtFut h4{
+        width: 30px;
+        margin-top:20px;
+        color:black;
+        border-color: black;
+
     }
 }
 
@@ -310,4 +329,5 @@ h1{
     grid-template-columns:repeat(2,auto);
     gap:13px;
 }
+
 
