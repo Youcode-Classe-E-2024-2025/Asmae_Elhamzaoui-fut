@@ -220,7 +220,6 @@ function ajouterJoueur() {
   }
 }
 
-
 // Ouvrture du modal
 document.getElementById("openModalBtn").onclick = openModal;
 
@@ -302,13 +301,8 @@ function modifierJoueur(playerId) {
 
 }
 
-
-
-
-
-
+//Selectionner tout les cartes vides 
 const cartesA = document.querySelectorAll(".cart");
-
 let selectedCarte = null;
 
 // parcourir tout les cartes vides;
@@ -319,10 +313,11 @@ cartesA.forEach((carte) => {
   });
 });
 
-// parcourir tout les t-shirt , et quand on survol sur le t-shirt les informations du joueur vont afficher 
 
+// parcourir tout les t-shirt
 const T_shirts = document.querySelectorAll(".T-shirtFut");
 
+//Selectionner tout les  t-shirt vides 
 T_shirts.forEach((T_shirt) => {
   T_shirt.addEventListener("click", () => {
     selectedCarte = T_shirt; //stockage de la carte
@@ -332,14 +327,11 @@ T_shirts.forEach((T_shirt) => {
 
 
 
-
+// fontion pour le remplissage des cartes vides par les informations des joueurs 
 function remplirCarte(player) {
 
-  console.log("kjls");
   console.log(player);
-
   if (!selectedCarte) return;
-
 
   const cartePosition = selectedCarte.getAttribute("data-position"); // récuperer la position de la carte
 
@@ -410,6 +402,7 @@ function remplirCarte(player) {
   }
 
 
+  // apple de la fonction encore une fois pour chager un joueur par un autre
   selectedCarte.onclick = function () {
     remplirCarte(player);
   }
