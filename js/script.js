@@ -224,17 +224,17 @@ function ajouterJoueur() {
 // Ouvrture du modal
 document.getElementById("openModalBtn").onclick = openModal;
 
-// modifier les informations d'un joueur
-
+// fonction pour la modifcation des informations d'un joueur
 function modifierJoueur(playerId) {
-  console.log("modifier joueur");
   console.log(playerId);
 
+  // ouverture du modal 
   openModal();
+  // trouver l'élément à modifier à partir du l'id"
   const playerToEdit = golobalPlayers.find(player => player.id === playerId);
-  if (playerToEdit) {
 
-    console.log(playerToEdit);
+  // si l'élement est trouvé on remplit les champs du formulaire par les inofrmations du joeurs qui sont déjà stockées
+  if (playerToEdit) {
     document.getElementById("name").value = playerToEdit.name;
     document.getElementById("photo").value = playerToEdit.photo;
     document.getElementById("position").value = playerToEdit.position;
@@ -244,6 +244,7 @@ function modifierJoueur(playerId) {
     document.getElementById("logo").value = playerToEdit.logo;
     document.getElementById("rating").value = playerToEdit.rating;
 
+    // étudier les cas des position ,en cas du gardient et cas du joueur
     if (playerToEdit.position === "GK") {
       gardienInputs.style.display = "block";
       joueurInputs.style.display = "none";
@@ -265,17 +266,11 @@ function modifierJoueur(playerId) {
     }
   }
 
-  buttonName.innerText = "Modifier le joueur";
-  headerModal.innerText = "Modifier un joueur";
+  buttonName.innerText = "Modifier le joueur";//changer le contenu du boutton du modal par Modifier le joueur
+  headerModal.innerText = "Modifier un joueur";//changer le titre du modal par Modifier le joueur
 
-
-
-
-
-
-
+  //  modification par des nouvelles valeurs 
   buttonName.onclick = function () {
-    console.log("modifier joueur clicked");
     playerToEdit.name = document.getElementById("name").value;
     playerToEdit.photo = document.getElementById("photo").value;
     playerToEdit.position = document.getElementById("position").value;
@@ -300,9 +295,6 @@ function modifierJoueur(playerId) {
       playerToEdit.defending = parseInt(document.getElementById("defending").value);
       playerToEdit.physical = parseInt(document.getElementById("physical").value);
     }
-
-
-
     modal.style.display = "none";
 
     afficherJoueur();
