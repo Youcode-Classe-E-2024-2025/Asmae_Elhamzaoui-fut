@@ -1,23 +1,29 @@
-var golobalPlayers = [];
-var buttonName = document.getElementById("addeddit-button");
-var formAddPlayer = document.getElementById("playerForm");
-var headerModal = document.getElementById("header-modal");
 
+
+var golobalPlayers = []; // tableau pour stocker les joueurs existent dans le fichier json anisi que les joueurs ajoutables vers la suite
+var buttonName = document.getElementById("addeddit-button"); // récupération du boutton pour la modification
+var formAddPlayer = document.getElementById("playerForm");//récupération du formulaire du modal
+var headerModal = document.getElementById("header-modal");//récupération  du titre pour le modifier en cas du modification
+
+
+// fonction pour récupérer les informations du joueurs dans le fichier json 
 async function stockerJoueur() {
   try {
-    // Await the fetch call and wait for the response to resolve
+    // Attendez l'appel de fetch() et attendez que la réponse soit résolue
     const response = await fetch('players.json');
 
-    // Await the response and parse it as JSON
+    // Attendez la réponse et analysez-la au format JSON
     const data = await response.json();
 
-    // Now that data is available, store the players in golobalPlayers
+    // stockez les joueurs dans globalPlayers
     golobalPlayers = data.players;
-  } catch (error) {
+  } 
+  catch (error) {
     console.error('Error loading players:', error);
   }
 }
 
+//une fois en charge la page on appelle la fonction stockerJoueur
 window.onload = stockerJoueur;
 
 
