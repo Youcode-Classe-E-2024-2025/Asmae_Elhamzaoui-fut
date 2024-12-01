@@ -203,18 +203,18 @@
   </section>
    <!-- %%%%%%%%% Fin du 3 ème section pour l'affichage des joueurs en se basant sur la formation 3-4-3  %%%%%%%%%%%%% -->
 
-  <!-- la 4 ème section pour l'affichage du modal  -->
+
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%% Début la 4 ème section pour l'affichage du modal  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
   <section id="modal">
-    <!-- Modal HTML -->
     <div id="playerModal" class="modal" >
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close">&times;</span> <!--Croix du suppression du modal -->
         <h2 id="header-modal">Ajouter un joueur</h2>
         <form id="playerForm">
-          <input type="text" id="name" placeholder="Nom & Prénom"  required>
-          <input type="url" id="photo" placeholder="photo" required>
-        
-          <select id="nationality" name="nationality">
+          <input type="text" id="name" placeholder="Nom & Prénom"  required> <!-- Nom et Prénom  -->
+          <input type="url" id="photo" placeholder="photo" required> <!-- Photo du joueur  -->
+          <select id="nationality" name="nationality"> <!-- Nationalité du joueur  -->
             <option value="Afghanistan">Afghanistan</option>
             <option value="Albania">Albania</option>
             <option value="Algeria">Algeria</option>
@@ -356,16 +356,14 @@
             <option value="Romania">Romania</option>
             <option value="Russia">Russia</option>
             <option value="Rwanda">Rwanda</option>
-        </select>
-        
-        
+          </select>
+          <input type="url" id="flag" placeholder="flag"   required> <!--image du drapeau du pays -->
+          <input type="text" id="club" placeholder="Club"   required> <!--Nom du club -->
+          <input type="url" id="logo" placeholder="Logo"  required> <!--image du drapeau d'équipe   -->
 
-          <input type="url" id="flag" placeholder="flag"   required>
-          <input type="text" id="club" placeholder="Club"   required>
-          <input type="url" id="logo" placeholder="Logo"  required>
           <div class="modalInputs">
-            <input type="number" id="rating" min="1" max="100" placeholder="Rating"  required>
-            <select  placeholder="position" id="position">
+            <input type="number" id="rating" min="1" max="100" placeholder="Rating"  required> <!-- Rating -->
+            <select  placeholder="position" id="position"> <!-- Position -->
               <option value="LW" >LW</option>
               <option value="ST">ST</option>
               <option value="RW">RW</option>
@@ -378,36 +376,34 @@
               <option value="GK">GK</option>
               <option value="CDM">CDM</option>
             </select>
-            
-
             <div id="joueur-inputs">
-              <input type="number" id="pace" min="0" max="100" placeholder="pace"  required>
-              <input type="number" id="shooting" min="0" max="100" placeholder="Shooting"  required>
-              <input type="number" id="passing"  min="0" max="100" placeholder="Passing"  required>
-              <input type="number" id="dribbling"  min="0" max="100" placeholder="dribbling"  required>
-              <input type="number" id="defending"  min="0" max="100" placeholder="defending"  required>
-              <input type="number" id="physical"  min="0" max="100" placeholder="Physical"  required>
+              <input type="number" id="pace" min="0" max="100" placeholder="pace"  required> <!-- pace -->
+              <input type="number" id="shooting" min="0" max="100" placeholder="Shooting"  required> <!-- shooting -->
+              <input type="number" id="passing"  min="0" max="100" placeholder="Passing"  required> <!-- passing -->
+              <input type="number" id="dribbling"  min="0" max="100" placeholder="dribbling"  required> <!-- dribbling -->
+              <input type="number" id="defending"  min="0" max="100" placeholder="defending"  required> <!--defending -->
+              <input type="number" id="physical"  min="0" max="100" placeholder="Physical"  required> <!-- physical -->
             </div>
             <div id="gardien-inputs" style="display: none;">
-              <input type="number" id="diving" min="0" max="100" placeholder="diving"  required>
-              <input type="number" id="handling" min="0" max="100" placeholder="handling"  required>
-              <input type="number" id="kicking"  min="0" max="100" placeholder="kicking"  required>
-              <input type="number" id="reflexes"  min="0" max="100" placeholder="reflexes"  required>
-              <input type="number" id="speed"  min="0" max="100" placeholder="speed"  required>
-              <input type="number" id="positioning"  min="0" max="100" placeholder="positioning"  required>
+              <input type="number" id="diving" min="0" max="100" placeholder="diving"  required> <!-- diving -->
+              <input type="number" id="handling" min="0" max="100" placeholder="handling"  required> <!-- handling -->
+              <input type="number" id="kicking"  min="0" max="100" placeholder="kicking"  required> <!-- kicking -->
+              <input type="number" id="reflexes"  min="0" max="100" placeholder="reflexes"  required> <!-- reflexes -->
+              <input type="number" id="speed"  min="0" max="100" placeholder="speed"  required> <!--speed -->
+              <input type="number" id="positioning"  min="0" max="100" placeholder="positioning"  required> <!-- positioning -->
             </div>
-            
-
           </div>
+          <!-- Boutton d'ajout  -->
           <button id="addeddit-button" type="button" onclick="ajouterJoueur()">Ajouter le joueur</button>
+
         </form>
       </div>
     </div>
-
   </section>
-
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%% Fin la 4 ème section pour l'affichage du modal  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
   <footer></footer>
+
   <script src="js/script.js"></script>
 </body>
 
