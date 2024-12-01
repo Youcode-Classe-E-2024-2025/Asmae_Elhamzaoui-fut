@@ -65,13 +65,6 @@ playerInfo.addEventListener("click",(e)=>{
 
 
 
-
-
-
-
-
-
-
 //supprimer un joueur 
 function supprimerJoueur(playerId) {
     console.log('hi');
@@ -84,6 +77,7 @@ function supprimerJoueur(playerId) {
         playerElement.remove();
     }
 }
+
 
 
 // fonction d'ajout d'un joueur
