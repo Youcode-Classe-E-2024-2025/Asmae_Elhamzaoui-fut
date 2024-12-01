@@ -27,16 +27,25 @@ async function stockerJoueur() {
 window.onload = stockerJoueur;
 
 
+// fonction pour l'affichage du joueurs stockés dans le tableau globalPlayers
 function afficherJoueur() {
 
+  const playersContainer = document.getElementById('container'); // récupérer l'emplacement ou on veut stocker les joueurs récupérée 
 
-  const playersContainer = document.getElementById('container');
   playersContainer.innerText = "";
-  console.log(golobalPlayers);
-  for (let i = 1; i <= golobalPlayers.length; i++) {
+
+  console.log(golobalPlayers); // tester si le tableau est chargé de données ou non
+
+  // boucler sur tout les éléments du tableau pour l'afficher"
+  for (let i = 1; i <= golobalPlayers.length; i++){
+
+    // création d'un div pour chaque joueur 
     const playerInfo = document.createElement('div');
+
+    //l'ajout du class "cartes" pour le div crée
     playerInfo.classList.add('cartes');
-    // Ajouter les informations du joueur
+
+    // Ajouter les informations du joueur au div 
     playerInfo.innerHTML = `
                  <img class="photo" src="${golobalPlayers[i - 1].photo}">
                  <div class="infos">
@@ -52,9 +61,12 @@ function afficherJoueur() {
                      <i onclick="modifierJoueur(${i})" class="fa-solid fa-pen-to-square" style="color: #1d721e;"></i>
                  </div>
  `;
+
+  //  ajouter le div au container
     playersContainer.appendChild(playerInfo);
 
 
+  // un événement click pour remplir la carte convenable dans le terrain par les données du joueur"
     playerInfo.addEventListener("click", (e) => {
       e.stopPropagation();
       remplirCarte(golobalPlayers[i - 1]);
@@ -62,8 +74,6 @@ function afficherJoueur() {
 
 
   }
-
-
 
 }
 
