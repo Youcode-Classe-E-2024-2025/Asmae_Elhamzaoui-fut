@@ -119,7 +119,6 @@ const gardienInputs = document.getElementById('gardien-inputs'); // inputs pour 
 
 
 // remplir le formulaire selon la position du joueurs , est ce qu'il un joueurs normal ou un gardient 
-
 position.addEventListener('change', function () {
   if (position.value === 'GK') {
     joueurInputs.style.display = 'none';
@@ -167,6 +166,7 @@ function validateForm(data) {
   }
   return true;
 }
+
 
 // Fonction pour ajouter un joueur
 function ajouterJoueur() {
