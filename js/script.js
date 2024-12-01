@@ -170,9 +170,6 @@ function validateForm(data) {
 
 // Fonction pour ajouter un joueur
 function ajouterJoueur() {
-
-  console.log("ajouter joueur clicked");
-
   // Récupérer les valeurs du formulaire
   const playerData = {
     id: golobalPlayers.length + 1,
@@ -213,7 +210,6 @@ function ajouterJoueur() {
     playerData.defending = parseInt(document.getElementById("defending").value);
     playerData.physical = parseInt(document.getElementById("physical").value);
   }
-
   // Valider les informations
   if (validateForm(playerData)) {
     // Ajouter le joueur au tableau
@@ -221,10 +217,10 @@ function ajouterJoueur() {
     // Fermer le modal
     modal.style.display = "none";
     afficherJoueur();
-
   }
-
 }
+
+
 // Ouvrture du modal
 document.getElementById("openModalBtn").onclick = openModal;
 
