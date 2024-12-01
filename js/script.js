@@ -111,12 +111,14 @@ function supprimerJoueur(playerId) {
 // Récupérer l'élément modal et le formulaire
 const modal = document.getElementById("playerModal");
 const form = document.getElementById("playerForm");
-const closeBtn = document.querySelector(".close");
+const closeBtn = document.querySelector(".close"); // récupérer la croix pour la fermeture du modal 
 
-const position = document.getElementById('position');
-const joueurInputs = document.getElementById('joueur-inputs');
-const gardienInputs = document.getElementById('gardien-inputs');
+const position = document.getElementById('position'); //récupérer la postion du joueur
+const joueurInputs = document.getElementById('joueur-inputs');  // inputs pour le joueur 
+const gardienInputs = document.getElementById('gardien-inputs'); // inputs pour le gardient
 
+
+// remplir le formulaire selon la position du joueurs , est ce qu'il un joueurs normal ou un gardient 
 
 position.addEventListener('change', function () {
   if (position.value === 'GK') {
@@ -131,7 +133,7 @@ position.addEventListener('change', function () {
 
 // Fonction pour ouvrir le modal
 function openModal() {
-  formAddPlayer.reset();
+  formAddPlayer.reset(); // réinitialise  le modal à chaque sortie
   headerModal.innerText = "Ajouter un joueur";
   buttonName.innerText = "Ajouter le joueur";
   modal.style.display = "block";
@@ -140,7 +142,7 @@ function openModal() {
   };
 }
 
-// Fonction pour fermer le modal
+// fermer le modal
 closeBtn.onclick = function () {
   modal.style.display = "none";
 }
