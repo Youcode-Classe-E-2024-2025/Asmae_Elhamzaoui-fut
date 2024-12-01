@@ -78,36 +78,29 @@ function afficherJoueur() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-//supprimer un joueur 
+// fonction pour la suppression d'un joueur  
 function supprimerJoueur(playerId) {
-  console.log('hi');
+
+  // vérifier si l'id est bien récupérer après le click
   console.log(playerId);
 
-  var isConfirm = confirm("Are you sure you want to proceed?");
-  // Trouver l'élément correspondant au joueur avec l'ID donné
+  // test de confirmation pour la suppression  
+  var isConfirm = confirm("Êtes-vous sûr de vouloir continuer?");
+
+  // si on veut vraiment supprimer le joueur
   if (isConfirm) {
+          // Trouver l'élément correspondant au joueur avec l'ID donné
+          const playerElement = document.querySelector(`.fa-trash[data-id="${playerId}"]`).closest('.cartes');
+          if (playerElement) {
+               // Suppression le joueur 
+               playerElement.remove();
+          }
 
-    const playerElement = document.querySelector(`.fa-trash[data-id="${playerId}"]`).closest('.cartes');
-
-    if (playerElement) {
-      // Suppression le joueur 
-      playerElement.remove();
-    }
-    alert("Player deleted successfully");
-
-  } else {
-    alert("Player not deleted");
+          alert("Joueur supprimé avec succès");
+  } 
+  // si on veut pas supprimer le joueur
+  else {
+    alert("Joueur non supprimé");
   }
 
 }
