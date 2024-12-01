@@ -3,7 +3,7 @@
 
 
 ## Contexte du projet
-L'application permettra RYASFUT aux utilisateurs de construire leur équipe FUT (Ultimate Team) en ajoutant, positionnant et modifiant les joueurs tout en respectant les formations tactiques 3-4-3. 
+L'application RYASFUT permettra  aux utilisateurs de construire leur équipe FUT (Ultimate Team) en ajoutant, positionnant et modifiant les joueurs tout en respectant la formation tactique 3-4-3. 
 
 ## Fonctionnalités principales
 
