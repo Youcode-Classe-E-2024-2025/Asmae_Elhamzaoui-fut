@@ -41,6 +41,16 @@ h1{
     margin-left:20px;
     gap:10px;
 }
+.cart{
+    animation: rotation 3s infinite linear;
+    cursor: pointer;
+}
+  /* Animation de mouvement de cartes */
+  .cart img:hover {
+    transform: rotate(15deg);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8); /* Ombre noire autour */
+}
 .cartes{
     width:350px;
     height: 60px;
@@ -269,7 +279,7 @@ h1{
     left:30%;
     top: 15px;
     width: 40%;
-    height:450px;
+    height:500px;
     background-color: green;
     text-align: center;
     
@@ -512,14 +522,14 @@ h1{
         width:410px; 
        }
        .modal {
-        height:60%;
+        height:50%;
     }
 }
 
 #joueur-inputs{
-    display: flex;
-    justify-content: center;
-    gap:2px;
+    display: grid;
+    grid-template-columns:repeat(3,auto);
+    justify-content:space-evenly;
 }
 
 
@@ -528,9 +538,9 @@ h1{
 }
 
 #gardien-inputs{
-    display: flex;
-    justify-content: center;
-    gap:2px;
+    display: grid;
+    grid-template-columns:repeat(3,auto);
+    justify-content:space-evenly;
 }
 #gardien-inputs input{
     width: 60px;
