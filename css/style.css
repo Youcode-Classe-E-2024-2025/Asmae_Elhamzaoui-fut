@@ -269,7 +269,7 @@ h1{
     left:30%;
     top: 15px;
     width: 40%;
-    height:55%;
+    height:450px;
     background-color: green;
     text-align: center;
     
@@ -282,7 +282,7 @@ h1{
     padding: 20px;
     border: 1px solid black;
     width: 80%;
-    height:87%;
+    height:85%;
     text-align: center;
 }
 
@@ -322,14 +322,6 @@ h1{
     margin:5px;
     padding-left:2px;
 }
-
-.modalInputs{
-    margin-top: 10px;
-    display:grid;
-    grid-template-columns:repeat(2,auto);
-    gap:13px;
-}
-
 @media(max-width:904px) {
    
     .cart-for31{
@@ -523,3 +515,23 @@ h1{
         height:60%;
     }
 }
+
+#joueur-inputs{
+    display: flex;
+    justify-content: center;
+    gap:2px;
+}
+
+
+#joueur-inputs input{
+   width: 60px;
+}
+
+#gardien-inputs{
+    display: flex;
+    justify-content: center;
+    gap:2px;
+}
+#gardien-inputs input{
+    width: 60px;
+ }
